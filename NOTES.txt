@@ -1,0 +1,40 @@
+CODE TRAILS (mao ni ang direction sa pagbuhat sa code)
+- did initial setup (See cmd in one note)
+- activated virtual_env
+- created a new project CoreRoot .
+- installed psycopg2-binary
+- created the database, user and user password, and grant all privileges
+to the user (in the book, the db is created after the initial migration which
+causes error. CREATED DB FIRST BEFORE THE INITIAL MIGRATION!!!)
+- migrated project (INITIAL)
+- modified DATABASES in settings.py
+- migrate
+- created first app core
+- added the app in INSTALLED_APPS
+- created second app user inside the core app
+- modified the models.py in user app
+- modified apps.py in user app
+- added AUTH_USER_MODEL = 'core_user.User' in settings.py
+- python manage.py makemigrations
+- python manage.py migrate
+- tested if the db works in python shell
+- installed django rest framework and django filter
+- added rest framework in the INSTALLED APPS
+- created serializers.py in user app
+- modified serializers.py
+- renamed views.py to viewsets.py in user app
+- created routers.py in core app
+- modified routers.py
+- tested API endpoints in Insomnia
+- modified permission in viewsets.py
+
+P.74
+
+- installed djangorestframework-simplejwt
+- added packaged in INSTALLED_APPS
+
+
+
+ERRORS:
+- updating a comment not working p.129
+- deleting a comment not working p.131
